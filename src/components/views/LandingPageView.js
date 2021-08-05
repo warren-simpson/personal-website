@@ -1,5 +1,5 @@
 import React from "react";
-import { Github } from "../icons"
+import { Github, Linkedin } from "../icons"
 import "../views/styles/LandingPageView.css";
 
 const LandingPageView = (props) => {
@@ -29,6 +29,24 @@ const LandingPageView = (props) => {
             </div>
 
             <div class="section2">
+              <div class="landingNavBar">
+                <div class="logoContainer">
+                    <p class="aboutTitle">About</p>
+                </div>
+                <div></div>
+                <ul>
+                    <li>
+                      <Linkedin className="githubIcon" fill="white"/> 
+                    </li>
+                </ul>
+              </div>
+
+              <p class="aboutText">
+                Computer Scientist who is extremely passionate about frontend development. 
+                I enjoy working with others who are able to communicate their required objectives clearly.
+                I live by the moto of "simplicity is the ultimate sophistication" because I believe quality over quantity.
+              </p>
+
 
             </div>
 
