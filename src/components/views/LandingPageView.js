@@ -47,11 +47,23 @@ const LandingPageView = (props) => {
                 I live by the moto of "simplicity is the ultimate sophistication" because I believe quality over quantity.
               </p>
 
-
+              <div class="landingNavBar">
+                <div></div>
+                <div></div>
+                <div>
+                  <button class="resumeButton">Resume</button>
+                </div>
+              </div>
             </div>
 
             <div class="section3">
-
+              <div class="landingNavBar">
+                <div class="logoContainer">
+                    <p class="aboutTitle">Case Studies</p>
+                </div>
+                <div></div>
+                <div></div>
+              </div>
             </div>
         </div>
         </>
