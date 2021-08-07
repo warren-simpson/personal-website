@@ -102,7 +102,7 @@
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-rows: 15% 85%
+    grid-template-rows: 15% 70% 15%
 }
 
 .aboutTitle {
@@ -116,7 +116,7 @@
 .aboutText {
     width: 800px;
     height: 120px;
-    margin-top: 7%;
+    margin-top: 9%;
     margin-left: auto;
     margin-right: auto;
     color: white;
@@ -125,10 +125,31 @@
     font-size: 25px;
 }
 
+.resumeButton {
+    background-color: #0F42FF;
+    width: 90px;
+    height: 30px;
+    border-radius: 7px;
+    border: solid 2px white;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 60px;
+    cursor: pointer;
+}
+
+.resumeButton:hover {
+    background-color: white;
+    color: #0F42FF;
+}
+
 .section3 {
     background-color: black;
     width: 100%;
     height: 100%;
+    display: grid;
+    grid-template-rows: 11% 89%;
 }
 
 @media only screen and (max-width: 947px) {
