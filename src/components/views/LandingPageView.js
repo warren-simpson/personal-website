@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin } from "../icons"
+import { Github, Linkedin } from "../icons";
 import "../views/styles/LandingPageView.css";
 
 const LandingPageView = (props) => {
@@ -42,7 +42,7 @@ const LandingPageView = (props) => {
               </div>
 
               <p class="aboutText">
-                Computer Scientist who is extremely passionate about frontend development. 
+                Computer Science graduate who is extremely passionate about frontend development. 
                 I enjoy working with others who are able to communicate their required objectives clearly.
                 I live by the moto of "simplicity is the ultimate sophistication" because I believe quality over quantity.
               </p>
@@ -67,12 +67,15 @@ const LandingPageView = (props) => {
 
               <div class="sec3A">
                 <div class="caseContainer1">
-
+                  <img class="caseImage" src="malusfrontpage.svg" alt=""></img>
+                  <div></div>
                 </div>
 
                 <div class="caseContainer2">
-
+                  <img class="caseImage" src="lemonadefrontpage.svg" alt=""></img>
+                  <div></div>
                 </div>
+
               </div>
             </div>
         </div>
