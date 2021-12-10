@@ -167,6 +167,8 @@
     margin-left: auto;
     margin-right: 10%;
     cursor: pointer;
+    display: grid;
+    grid-template-rows: 37% 63%;
 }
 
 .caseContainer2 {
@@ -176,6 +178,10 @@
     height: 550px;
     margin-left: 10%;
     cursor: pointer;
+}
+
+.caseImage {
+    width: 100%;
 }
 
 @media only screen and (max-width: 947px) {
