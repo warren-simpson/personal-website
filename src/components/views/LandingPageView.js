@@ -76,7 +76,10 @@ const LandingPageView = (props) => {
 
                 <div class="caseContainer2">
                   <img class="caseImage" src="lemonadefrontpage.svg" alt=""></img>
-                  <p></p>
+                  <p class="caseTitle">Lemonade</p>
+                  <p class="caseText">
+                    An ecommerce web application created to help customers purchase items such as bags and shows
+                    in multiple quanties.</p>
                 </div>
 
               </div>
