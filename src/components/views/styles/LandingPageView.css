@@ -168,7 +168,7 @@
     margin-right: 10%;
     cursor: pointer;
     display: grid;
-    grid-template-rows: 37% 63%;
+    grid-template-rows: 39% 10% 51%;
 }
 
 .caseContainer2 {
@@ -182,6 +182,24 @@
 
 .caseImage {
     width: 100%;
+}
+
+.caseTitle {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.caseText {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 17px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 60px;
 }
 
 @media only screen and (max-width: 947px) {

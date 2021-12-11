@@ -68,12 +68,15 @@ const LandingPageView = (props) => {
               <div class="sec3A">
                 <div class="caseContainer1">
                   <img class="caseImage" src="malusfrontpage.svg" alt=""></img>
-                  <div></div>
+                  <p class="caseTitle">Malus</p>
+                  <p class="caseText">
+                    A web application that was created to interact with smart contracts on the
+                    Ethereum blockchain.</p>
                 </div>
 
                 <div class="caseContainer2">
                   <img class="caseImage" src="lemonadefrontpage.svg" alt=""></img>
-                  <div></div>
+                  <p></p>
                 </div>
 
               </div>
