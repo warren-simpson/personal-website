@@ -12,7 +12,7 @@ const LandingPageView = (props) => {
                 </div>
                 <div></div>
                 <ul>
-                    <li>
+                    <li onClick={(e) => props.handleNewWindowClick(e, "https://github.com/Warren28")}>
                       <Github className="githubIcon" fill="white"/> 
                     </li>
                 </ul>
