@@ -10,8 +10,8 @@ class LandingPageContainer extends Component {
     };
   }
 
-  handleClick = (e) => {
-
+  handleNewWindowClick = (e, link) => {
+    window.open(link, "_blank");
   }
 
   handleCaseOverEnter = (e, caseNumber) => {
@@ -44,9 +44,9 @@ class LandingPageContainer extends Component {
     return (
       <>
       <LandingPageView
+      handleNewWindowClick={this.handleNewWindowClick}
       handleCaseOverEnter={this.handleCaseOverEnter}
       handleCaseOverLeave={this.handleCaseOverLeave}
-      handleClick={this.handleClick}
       state={this.state}
       />
       </>
