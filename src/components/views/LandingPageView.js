@@ -66,7 +66,7 @@ const LandingPageView = (props) => {
               </div>
 
               <div class="sec3A">
-                <div class="caseContainer1" onMouseEnter={(e) => props.handleCaseOverEnter(e, "1")} onMouseLeave={(e) => props.handleCaseOverLeave(e, "1")}>
+                <div class="caseContainer1" onMouseEnter={(e) => props.handleCaseOverEnter(e, "1")} onMouseLeave={(e) => props.handleCaseOverLeave(e, "1")} onClick={(e) => props.handleNewWindowClick(e, "https://malus.fi")}>
                   <img class="caseImage" src="malusfrontpage.svg" alt="" style={{"opacity": props.state.case1Opacity}}></img>
                   <p class="caseTitle">Malus</p>
                   <p class="caseText">
