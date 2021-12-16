@@ -74,7 +74,7 @@ const LandingPageView = (props) => {
                     Ethereum blockchain.</p>
                 </div>
 
-                <div class="caseContainer2" onMouseEnter={(e) => props.handleCaseOverEnter(e, "2")} onMouseLeave={(e) => props.handleCaseOverLeave(e, "2")}>
+                <div class="caseContainer2" onMouseEnter={(e) => props.handleCaseOverEnter(e, "2")} onMouseLeave={(e) => props.handleCaseOverLeave(e, "2")} onClick={(e) => props.handleNewWindowClick(e, "https://lemonade-ecomm.herokuapp.com/php/FrontPage.php")}>
                   <img class="caseImage" src="lemonadefrontpage.svg" alt="" style={{"opacity": props.state.case2Opacity}}></img>
                   <p class="caseTitle">Lemonade</p>
                   <p class="caseText">
