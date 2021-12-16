@@ -51,7 +51,7 @@ const LandingPageView = (props) => {
                 <div></div>
                 <div></div>
                 <div>
-                  <button class="resumeButton">Resume</button>
+                  <button class="resumeButton" onClick={(e) => props.handleNewWindowClick(e, "https://www.dropbox.com/s/vmj373sh58o0h61/Resume.docx?dl=0")}>Resume</button>
                 </div>
               </div>
             </div>
