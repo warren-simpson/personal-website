@@ -84,6 +84,18 @@ const LandingPageView = (props) => {
 
               </div>
             </div>
+
+            <div class="section4">
+              <div class="landingNavBar">
+                <div class="logoContainer">
+                    <p class="aboutTitle">Contact</p>
+                </div>
+                <div></div>
+                <div></div>
+              </div>
+
+
+            </div>
         </div>
         </>
     );
