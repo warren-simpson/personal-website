@@ -95,6 +95,26 @@ const LandingPageView = (props) => {
               </div>
 
               <form class="contactForm">
+                <div class="formCell1">
+                  <label class="formLabel" >Firstname</label>
+                  <input class="formInput" disabled autocomplete="off"></input>
+                </div>
+
+                <div class="formCell1">
+                  <label class="formLabel" >Lastname</label>
+                  <input class="formInput" disabled autocomplete="off"></input>
+                </div>
+
+                <div class="formCell1">
+                  <label class="formLabel" >Company (Optional)</label>
+                  <input class="formInput" disabled autocomplete="off"></input>
+                </div>
+
+                <div class="formCell1">
+                  <label class="formLabel" >Email</label>
+                  <input class="formInput" disabled autocomplete="off"></input>
+                </div>
+
 
               </form>
             </div>
