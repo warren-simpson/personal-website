@@ -94,7 +94,9 @@ const LandingPageView = (props) => {
                 <div></div>
               </div>
 
+              <form class="contactForm">
 
+              </form>
             </div>
         </div>
         </>
