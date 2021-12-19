@@ -115,6 +115,10 @@ const LandingPageView = (props) => {
                   <input class="formInput" disabled autocomplete="off"></input>
                 </div>
 
+                <div class="formCell2">
+                  <label class="formLabel" >Message</label>
+                  <input class="formInput" disabled autocomplete="off"></input>
+                </div>
 
               </form>
             </div>
