@@ -120,6 +120,9 @@ const LandingPageView = (props) => {
                   <input class="formInput" disabled autocomplete="off"></input>
                 </div>
 
+                <div class="formCell1">
+                  <button class="submitButtonOn">Submit</button>
+                </div>
               </form>
             </div>
         </div>
