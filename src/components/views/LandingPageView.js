@@ -102,7 +102,7 @@ const LandingPageView = (props) => {
 
                 <div class="formCell1">
                   <label class="formLabel" >Lastname</label>
-                  <input class="formInput"  autocomplete="off"></input>
+                  <input class="formInput" autocomplete="off"></input>
                 </div>
 
                 <div class="formCell1">
