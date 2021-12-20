@@ -7,11 +7,21 @@ class LandingPageContainer extends Component {
     this.state = { 
       case1Opacity: "1",
       case2Opacity: "1",
+      firstname: "",
     };
   }
 
   handleNewWindowClick = (e, link) => {
     window.open(link, "_blank");
+  }
+
+  handleInputChange = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+
+    this.setState({
+      [name]: value,
+    });
   }
 
   handleCaseOverEnter = (e, caseNumber) => {
@@ -45,6 +55,7 @@ class LandingPageContainer extends Component {
       <>
       <LandingPageView
       handleNewWindowClick={this.handleNewWindowClick}
+      handleInputChange={this.handleInputChange}
       handleCaseOverEnter={this.handleCaseOverEnter}
       handleCaseOverLeave={this.handleCaseOverLeave}
       state={this.state}
