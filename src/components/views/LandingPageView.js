@@ -107,7 +107,7 @@ const LandingPageView = (props) => {
 
                 <div class="formCell1">
                   <label class="formLabel" >Company (Optional)</label>
-                  <input class="formInput" autocomplete="off"></input>
+                  <input class="formInput" value={props.state.company} name="company" onChange={e => props.handleInputChange(e)} autocomplete="off"></input>
                 </div>
 
                 <div class="formCell1">
