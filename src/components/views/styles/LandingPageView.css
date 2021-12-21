@@ -246,6 +246,14 @@
     width: 100%;
     border: white solid 1px;
     border-radius: 7px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    color: white;
+}
+
+.formInput:focus {
+    background-color: transparent;
+    color: white;
 }
 
 .formCell2 {
