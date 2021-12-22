@@ -10,7 +10,8 @@ class LandingPageContainer extends Component {
       firstname: "",
       lastname: "",
       company: "",
-      email: ""
+      email: "",
+      message: ""
     };
   }
 
