@@ -9,7 +9,8 @@ class LandingPageContainer extends Component {
       case2Opacity: "1",
       firstname: "",
       lastname: "",
-      company: ""
+      company: "",
+      email: ""
     };
   }
 
