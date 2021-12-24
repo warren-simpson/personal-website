@@ -248,6 +248,7 @@
     border-radius: 7px;
     box-sizing: border-box;
     padding-left: 15px;
+    padding-right: 15px;
     color: white;
 }
 
@@ -279,6 +280,22 @@
     font-weight: bold;
     font-size: 18px;
     border-style: none;
+}
+
+.formInput2 {
+    background-color: transparent;
+    height: 240px;
+    width: 100%;
+    border: white solid 1px;
+    border-radius: 7px;
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    overflow: hidden;
+    resize: none;
 }
 
 
