@@ -16,14 +16,17 @@ class LandingPageContainer extends Component {
   }
 
   handleNewWindowClick = (e, link) => {
+
     window.open(link, "_blank");
   }
 
-  handleSumbit = (e) => {
+  handleSubmit = (e) => {
 
-  }
+  };
 
   handleInputChange = (e) => {
+
+
     const name = e.target.name;
     const value = e.target.value;
 
@@ -33,6 +36,7 @@ class LandingPageContainer extends Component {
   }
 
   handleCaseOverEnter = (e, caseNumber) => {
+
     if(caseNumber === "1") {
       this.setState({
         case1Opacity: "0.7"
@@ -46,6 +50,7 @@ class LandingPageContainer extends Component {
   }
 
   handleCaseOverLeave = (e, caseNumber) => {
+
     if(caseNumber === "1") {
       this.setState({
         case1Opacity: "1"
