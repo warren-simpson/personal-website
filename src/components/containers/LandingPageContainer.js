@@ -19,6 +19,10 @@ class LandingPageContainer extends Component {
     window.open(link, "_blank");
   }
 
+  handleSumbit = (e) => {
+
+  }
+
   handleInputChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
@@ -59,6 +63,7 @@ class LandingPageContainer extends Component {
       <>
       <LandingPageView
       handleNewWindowClick={this.handleNewWindowClick}
+      handleSumbit={this.handleSumbit}
       handleInputChange={this.handleInputChange}
       handleCaseOverEnter={this.handleCaseOverEnter}
       handleCaseOverLeave={this.handleCaseOverLeave}
