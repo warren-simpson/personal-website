@@ -25,7 +25,7 @@ class LandingPageContainer extends Component {
   };
 
   handleInputChange = (e) => {
-
+    e.preventDefault();
 
     const name = e.target.name;
     const value = e.target.value;
