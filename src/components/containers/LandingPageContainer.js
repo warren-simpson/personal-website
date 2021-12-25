@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { LandingPageView } from "../views";
 
+//#e32727
 class LandingPageContainer extends Component {
   constructor(props) {
     super(props);
@@ -8,13 +9,14 @@ class LandingPageContainer extends Component {
       case1Opacity: "1",
       case2Opacity: "1",
       firstname: "",
-      firstname_style: "",
+      l1_color: "white",
       lastname: "",
-      lastname_style: "",
+      l2_color: "white",
       company: "",
       email: "",
-      email_style: "",
+      l3_color: "white",
       message: "",
+      l4_color: "white",
       button_backgroundColor: "#0023a6",
       button_cursor: "arrow"
     };
@@ -72,7 +74,7 @@ class LandingPageContainer extends Component {
       <>
       <LandingPageView
       handleNewWindowClick={this.handleNewWindowClick}
-      handleSumbit={this.handleSumbit}
+      handleSubmit={this.handleSubmit}
       handleInputChange={this.handleInputChange}
       handleCaseOverEnter={this.handleCaseOverEnter}
       handleCaseOverLeave={this.handleCaseOverLeave}
