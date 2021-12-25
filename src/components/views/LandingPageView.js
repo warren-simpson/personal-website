@@ -121,7 +121,7 @@ const LandingPageView = (props) => {
                 </div>
 
                 <div class="formCell1">
-                  <button class="submitButtonOn" type="button">Submit</button>
+                  <button class="submitButton" style={{"background-color": props.state.button_backgroundColor, "": props.state.button_cursor}} onClick={(e) => props.handleSubmit(e)} type="button">Submit</button>
                 </div>
               </form>
             </div>
