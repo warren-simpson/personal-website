@@ -97,12 +97,12 @@ const LandingPageView = (props) => {
               <form class="contactForm">
                 <div class="formCell1">
                   <label class="formLabel" >Firstname</label>
-                  <input class="formInput" value={props.state.firstname} name="firstname" onChange={(e) => props.handleInputChange(e)} autoComplete="off"></input>
+                  <input class="formInput"style={{"border-color": props.state.l1_color}} value={props.state.firstname} name="firstname" onChange={(e) => props.handleInputChange(e)} autoComplete="off"></input>
                 </div>
 
                 <div class="formCell1">
                   <label class="formLabel" >Lastname</label>
-                  <input class="formInput" value={props.state.lastname} name="lastname" onChange={(e) => props.handleInputChange(e)} autoComplete="off"></input>
+                  <input class="formInput" style={{"border-color": props.state.l2_color}} value={props.state.lastname} name="lastname" onChange={(e) => props.handleInputChange(e)} autoComplete="off"></input>
                 </div>
 
                 <div class="formCell1">
@@ -112,12 +112,12 @@ const LandingPageView = (props) => {
 
                 <div class="formCell1">
                   <label class="formLabel" >Email</label>
-                  <input class="formInput" value={props.state.email} name="email" onChange={(e) => props.handleInputChange(e)} autoComplete="off"></input>
+                  <input class="formInput" style={{"border-color": props.state.l3_color}} value={props.state.email} name="email" onChange={(e) => props.handleInputChange(e)} autoComplete="off"></input>
                 </div>
 
                 <div class="formCell2">
                   <label class="formLabel" >Message</label>
-                  <textarea  class="formInput2" value={props.state.message} name="message" onChange={(e) => props.handleInputChange(e)} autoComplete="off"></textarea>
+                  <textarea  class="formInput2" style={{"border-color": props.state.l4_color}} value={props.state.message} name="message" onChange={(e) => props.handleInputChange(e)} autoComplete="off"></textarea>
                 </div>
 
                 <div class="formCell1">
