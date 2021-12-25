@@ -8,15 +8,19 @@ class LandingPageContainer extends Component {
       case1Opacity: "1",
       case2Opacity: "1",
       firstname: "",
+      firstname_style: "",
       lastname: "",
+      lastname_style: "",
       company: "",
       email: "",
-      message: ""
+      email_style: "",
+      message: "",
+      button_backgroundColor: "#0023a6",
+      button_cursor: "arrow"
     };
   }
 
   handleNewWindowClick = (e, link) => {
-
     window.open(link, "_blank");
   }
 
