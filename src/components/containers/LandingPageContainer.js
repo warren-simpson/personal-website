@@ -9,16 +9,17 @@ class LandingPageContainer extends Component {
       case1Opacity: "1",
       case2Opacity: "1",
       firstname: "",
-      l1_color: "white",
+      l1Color: "white",
       lastname: "",
-      l2_color: "white",
+      l2Color: "white",
       company: "",
       email: "",
-      l3_color: "white",
+      l3Color: "white",
       message: "",
-      l4_color: "white",
-      button_backgroundColor: "#0023a6",
-      button_cursor: "arrow"
+      l4Color: "white",
+      amountCompleted: 0,
+      buttonBackgroundColor: "#0023a6",
+      buttonCursor: "arrow"
     };
   }
 
