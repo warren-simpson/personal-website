@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { LandingPageView } from "../views";
 
-//#e32727
+
 class LandingPageContainer extends Component {
   constructor(props) {
     super(props);
@@ -23,24 +23,67 @@ class LandingPageContainer extends Component {
     };
   }
 
+
+
   handleNewWindowClick = (e, link) => {
     window.open(link, "_blank");
   }
+
+
 
   handleSubmit = (e) => {
 
   };
 
+
+
   handleInputChange = (e) => {
     e.preventDefault();
-
     const name = e.target.name;
     const value = e.target.value;
 
+    //
     this.setState({
       [name]: value,
     });
+ 
+
+    //
+    if(name === "firstname" && value === "") {
+      this.setState({
+        l1Color: "#e32727", 
+        amountCompleted: this.state.amountCompleted - 1,
+      });
+    }
+    else if(name === "lastname" && value === "") {
+      this.setState({
+        l2Color: "#e32727",
+        amountCompleted: this.state.amountCompleted - 1,
+      });
+    }
+    else if(name === "email" && value === "") {
+      this.setState({
+        l3Color: "#e32727",
+        amountCompleted: this.state.amountCompleted - 1,
+      });
+    }
+    else if(name === "message" && value === "") {
+      this.setState({
+        l4Color: "#e32727",
+        amountCompleted: this.state.amountCompleted - 1,
+      });
+    }
+
+
+    //
+    if(this.state.amountCompleted === 4) {
+      this.setState({
+        buttonBackgroundColor: "#0F42FF",
+      });
+    }
   }
+
+
 
   handleCaseOverEnter = (e, caseNumber) => {
 
@@ -56,6 +99,8 @@ class LandingPageContainer extends Component {
     }
   }
 
+
+
   handleCaseOverLeave = (e, caseNumber) => {
 
     if(caseNumber === "1") {
@@ -69,6 +114,8 @@ class LandingPageContainer extends Component {
       })
     }
   }
+
+
 
   render() {
     return (
