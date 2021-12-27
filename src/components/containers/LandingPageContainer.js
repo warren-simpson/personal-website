@@ -17,7 +17,6 @@ class LandingPageContainer extends Component {
       l3Color: "white",
       message: "",
       l4Color: "white",
-      amountCompleted: 0,
       buttonBackgroundColor: "#0023a6",
       buttonCursor: "arrow"
     };
@@ -38,49 +37,50 @@ class LandingPageContainer extends Component {
 
 
   handleInputChange = (e) => {
-    e.preventDefault();
     const name = e.target.name;
     const value = e.target.value;
 
-    //
+    this.setState(
+      {
+        [name]: value, 
+      },
+
+      this.finishInputChange(name, value)
+    );
+  }
+
+
+
+  finishInputChange = (name, value) => {
+
+    //Update the state for each individual cell.
+    if(name === "firstname") {
+      this.setState({
+        l1Color: value === "" ? "#e32727" : "white", 
+      });
+    }
+    else if(name === "lastname") {
+      this.setState({
+        l2Color: value === "" ? "#e32727" : "white", 
+      });
+    }
+    else if(name === "email") {
+      this.setState({
+        l3Color: value === "" ? "#e32727" : "white",
+      });
+    }
+    else if(name === "message") {
+      this.setState({
+        l4Color: value === "" ? "#e32727" : "white",
+      });
+    }
+
+    //Update the submit button state based on 
+    const isButtonSet = (this.state.firstname !== "" && this.state.lastname !== "" && this.state.email !== "" && this.state.message !== "")
     this.setState({
-      [name]: value,
+      buttonBackgroundColor: isButtonSet === true ? "#0F42FF" : "#0023a6",
+      buttonCursor: isButtonSet === true ? "pointer" : "arrow",
     });
- 
-
-    //
-    if(name === "firstname" && value === "") {
-      this.setState({
-        l1Color: "#e32727", 
-        amountCompleted: this.state.amountCompleted - 1,
-      });
-    }
-    else if(name === "lastname" && value === "") {
-      this.setState({
-        l2Color: "#e32727",
-        amountCompleted: this.state.amountCompleted - 1,
-      });
-    }
-    else if(name === "email" && value === "") {
-      this.setState({
-        l3Color: "#e32727",
-        amountCompleted: this.state.amountCompleted - 1,
-      });
-    }
-    else if(name === "message" && value === "") {
-      this.setState({
-        l4Color: "#e32727",
-        amountCompleted: this.state.amountCompleted - 1,
-      });
-    }
-
-
-    //
-    if(this.state.amountCompleted === 4) {
-      this.setState({
-        buttonBackgroundColor: "#0F42FF",
-      });
-    }
   }
 
 

@@ -95,7 +95,7 @@ const LandingPageView = (props) => {
               </div>
 
               <form class="contactForm">
-                <div class="formCell1">
+                <div class="formCell1" onSubmit={(e) => props.handleSubmit(e)}>
                   <label class="formLabel" >Firstname</label>
                   <input class="formInput"style={{"border-color": props.state.l1Color}} value={props.state.firstname} name="firstname" onChange={(e) => props.handleInputChange(e)} autoComplete="off"></input>
                 </div>
@@ -121,7 +121,7 @@ const LandingPageView = (props) => {
                 </div>
 
                 <div class="formCell1">
-                  <button class="submitButton" style={{"background-color": props.state.buttonBackgroundColor, "": props.state.buttonCursor}} onClick={(e) => props.handleSubmit(e)} type="button">Submit</button>
+                  <button class="submitButton" style={{"background-color": props.state.buttonBackgroundColor, "cursor": props.state.buttonCursor}} onClick={(e) => props.handleSubmit(e)} type="button">Submit</button>
                 </div>
               </form>
             </div>
