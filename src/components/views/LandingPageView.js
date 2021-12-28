@@ -3,6 +3,7 @@ import { Github, Linkedin } from "../icons";
 import "../views/styles/LandingPageView.css";
 
 const LandingPageView = (props) => {
+  
     return (
         <>
         <div class="landingPage">
