@@ -31,22 +31,21 @@ class LandingPageContainer extends Component {
 
 
   handleSubmit = (e) => {
+    e.preventDefault();
 
   };
 
 
 
   handleInputChange = (e) => {
+    e.preventDefault();
+
     const name = e.target.name;
     const value = e.target.value;
 
-    this.setState(
-      {
-        [name]: value, 
-      },
-
+    this.setState({[name]: value}, () => {
       this.finishInputChange(name, value)
-    );
+    })
   }
 
 
