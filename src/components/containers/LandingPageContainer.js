@@ -10,13 +10,17 @@ class LandingPageContainer extends Component {
       case2Opacity: "1",
       firstname: "",
       l1Color: "white",
+      l1ErrorMessage: "",
       lastname: "",
       l2Color: "white",
+      l2ErrorMessage: "",
       company: "",
       email: "",
       l3Color: "white",
+      l3ErrorMessage: "",
       message: "",
       l4Color: "white",
+      l4ErrorMessage: "",
       buttonBackgroundColor: "#0023a6",
       buttonCursor: "arrow"
     };
@@ -56,21 +60,25 @@ class LandingPageContainer extends Component {
     if(name === "firstname") {
       this.setState({
         l1Color: value === "" ? "#e32727" : "white", 
+        l1ErrorMessage: value === "" ? "required" : "",
       });
     }
     else if(name === "lastname") {
       this.setState({
         l2Color: value === "" ? "#e32727" : "white", 
+        l2ErrorMessage: value === "" ? "required" : "",
       });
     }
     else if(name === "email") {
       this.setState({
         l3Color: value === "" ? "#e32727" : "white",
+        l3ErrorMessage: value === "" ? "required" : "",
       });
     }
     else if(name === "message") {
       this.setState({
         l4Color: value === "" ? "#e32727" : "white",
+        l4ErrorMessage: value === "" ? "required" : "",
       });
     }
 
