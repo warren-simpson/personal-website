@@ -55,6 +55,9 @@ class LandingPageContainer extends Component {
 
 
   finishInputChange = (name, value) => {
+    
+    // eslint-disable-next-line
+    let testEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
     //Update the state for each individual cell.
     if(name === "firstname") {
@@ -71,8 +74,8 @@ class LandingPageContainer extends Component {
     }
     else if(name === "email") {
       this.setState({
-        l3Color: value === "" ? "#e32727" : "white",
-        l3ErrorMessage: value === "" ? "required" : "",
+        l3Color: !testEmail.test(value) ? "#e32727" : "white", 
+        l3ErrorMessage: !testEmail.test(value) ? "Email is not valid" : "",
       });
     }
     else if(name === "message") {
