@@ -97,12 +97,12 @@ const LandingPageView = (props) => {
 
               <form class="contactForm">
                 <div class="formCell1" onSubmit={(e) => props.handleSubmit(e)}>
-                  <label class="formLabel" >Firstname</label>
+                  <label class="formLabel" >Firstname <span class="errorMessage">{props.state.l1ErrorMessage}</span></label>
                   <input class="formInput"style={{"border-color": props.state.l1Color}} value={props.state.firstname} name="firstname" onChange={(e) => props.handleInputChange(e)} autoComplete="off"></input>
                 </div>
 
                 <div class="formCell1">
-                  <label class="formLabel" >Lastname</label>
+                  <label class="formLabel" >Lastname <span class="errorMessage">{props.state.l2ErrorMessage}</span></label>
                   <input class="formInput" style={{"border-color": props.state.l2Color}} value={props.state.lastname} name="lastname" onChange={(e) => props.handleInputChange(e)} autoComplete="off"></input>
                 </div>
 
@@ -112,12 +112,12 @@ const LandingPageView = (props) => {
                 </div>
 
                 <div class="formCell1">
-                  <label class="formLabel" >Email</label>
+                  <label class="formLabel" >Email <span class="errorMessage">{props.state.l3ErrorMessage}</span></label>
                   <input class="formInput" style={{"border-color": props.state.l3Color}} value={props.state.email} name="email" onChange={(e) => props.handleInputChange(e)} autoComplete="off"></input>
                 </div>
 
                 <div class="formCell2">
-                  <label class="formLabel" >Message</label>
+                  <label class="formLabel" >Message <span class="errorMessage">{props.state.l4ErrorMessage}</span></label>
                   <textarea  class="formInput2" style={{"border-color": props.state.l4Color}} value={props.state.message} name="message" onChange={(e) => props.handleInputChange(e)} autoComplete="off"></textarea>
                 </div>
 
