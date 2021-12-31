@@ -49,7 +49,7 @@
     color: white;
 }
 
-.githubIcon {
+.githubIcon1 {
     width: 35px; 
     height: 35px;
     cursor: pointer;
@@ -172,7 +172,7 @@
     margin-right: 10%;
     cursor: pointer;
     display: grid;
-    grid-template-rows: 39% 10% 51%;
+    grid-template-rows: 39% 10% 42% 9%;
 }
 
 .caseContainer2 {
@@ -182,6 +182,8 @@
     height: 550px;
     margin-left: 10%;
     cursor: pointer;
+    display: grid;
+    grid-template-rows: 39% 10% 42% 9%;
 }
 
 .caseImage {
@@ -204,6 +206,17 @@
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 60px;
+}
+
+.caseGitHolder {
+    margin-right: 20px;
+    margin-left: auto;
+}
+
+.githubIcon2 {
+    width: 25px; 
+    height: 25px;
+    cursor: pointer;
 }
 
 .section4 {
