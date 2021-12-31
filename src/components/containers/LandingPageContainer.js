@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { LandingPageView } from "../views";
 //import{ init } from '@emailjs/browser';
-//import dotenv from 'dotenv';
-
+import dotenv from "dotenv"
 
 class LandingPageContainer extends Component {
   constructor(props) {
@@ -24,8 +23,13 @@ class LandingPageContainer extends Component {
       l4Color: "white",
       l4ErrorMessage: "",
       buttonBackgroundColor: "#0023a6",
-      buttonCursor: "arrow"
+      buttonCursor: "arrow",
     };
+  }
+
+  componentDidMount() {
+    dotenv.config();
+    console.log(process.env);
   }
 
 
