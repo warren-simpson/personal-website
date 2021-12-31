@@ -14,7 +14,7 @@ const LandingPageView = (props) => {
                 <div></div>
                 <ul>
                     <li onClick={(e) => props.handleNewWindowClick(e, "https://github.com/Warren28")}>
-                      <Github className="githubIcon" fill="white"/> 
+                      <Github className="githubIcon1" fill="white"/> 
                     </li>
                 </ul>
             </div>
@@ -37,7 +37,7 @@ const LandingPageView = (props) => {
                 <div></div>
                 <ul>
                     <li onClick={(e) => props.handleNewWindowClick(e, "https://www.linkedin.com/in/warren-simpson1/")}>
-                      <Linkedin className="githubIcon" fill="white"/> 
+                      <Linkedin className="githubIcon1" fill="white"/> 
                     </li>
                 </ul>
               </div>
@@ -73,6 +73,9 @@ const LandingPageView = (props) => {
                   <p class="caseText">
                     A web application that was created to interact with smart contracts on the
                     Ethereum blockchain.</p>
+                  <i class="caseGitHolder">
+                    <Github className="githubIcon2" fill="white"/> 
+                  </i>
                 </div>
 
                 <div class="caseContainer2" onMouseEnter={(e) => props.handleCaseOverEnter(e, "2")} onMouseLeave={(e) => props.handleCaseOverLeave(e, "2")} onClick={(e) => props.handleNewWindowClick(e, "https://lemonade-ecomm.herokuapp.com/php/FrontPage.php")}>
@@ -81,6 +84,9 @@ const LandingPageView = (props) => {
                   <p class="caseText">
                     An ecommerce web application created to help customers purchase items such as bags and shoes
                     in multiple quanties.</p>
+                  <i class="caseGitHolder">
+                    <Github className="githubIcon2" fill="white"/> 
+                  </i>
                 </div>
 
               </div>
