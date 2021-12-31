@@ -27,6 +27,7 @@ class LandingPageContainer extends Component {
     };
   }
 
+  
   componentDidMount() {
     dotenv.config();
     console.log(process.env);

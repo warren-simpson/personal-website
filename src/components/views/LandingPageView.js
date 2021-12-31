@@ -73,7 +73,7 @@ const LandingPageView = (props) => {
                   <p class="caseText">
                     A web application that was created to interact with smart contracts on the
                     Ethereum blockchain.</p>
-                  <i class="caseGitHolder">
+                  <i class="caseGitHolder" onClick={(e) => props.handleNewWindowClick(e, "https://github.com/malus-labs")}>
                     <Github className="githubIcon2" fill="white"/> 
                   </i>
                 </div>
@@ -84,7 +84,7 @@ const LandingPageView = (props) => {
                   <p class="caseText">
                     An ecommerce web application created to help customers purchase items such as bags and shoes
                     in multiple quanties.</p>
-                  <i class="caseGitHolder">
+                  <i class="caseGitHolder" onClick={(e) => props.handleNewWindowClick(e, "https://github.com/Warren28/Php_Project")}>
                     <Github className="githubIcon2" fill="white"/> 
                   </i>
                 </div>
