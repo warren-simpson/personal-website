@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { LandingPageView } from "../views";
-//import{ init } from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 import dotenv from "dotenv"
 
 class LandingPageContainer extends Component {
@@ -27,10 +27,9 @@ class LandingPageContainer extends Component {
     };
   }
 
-  
+
   componentDidMount() {
     dotenv.config();
-    console.log(process.env);
   }
 
 
@@ -43,7 +42,16 @@ class LandingPageContainer extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
+    const form = window.document.getElementsByClassName("contactForm");
 
+    if(this.state.buttonBackgroundColor === "#0F42FF") {
+      emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form[0], process.env.REACT_APP_USER_ID)
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    }
   };
 
 
