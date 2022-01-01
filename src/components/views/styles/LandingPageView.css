@@ -290,6 +290,7 @@
 }
 
 .submitButton {
+    background-color: #0F42FF;
     color: white;
     width: 100px;
     height: 30px;
@@ -301,6 +302,10 @@
     font-weight: bold;
     font-size: 18px;
     border-style: none;
+}
+
+.submitButton:active {
+    opacity: 0.7;
 }
 
 .formInput2 {

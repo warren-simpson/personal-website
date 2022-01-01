@@ -22,7 +22,8 @@ class LandingPageContainer extends Component {
       message: "",
       l4Color: "white",
       l4ErrorMessage: "",
-      buttonBackgroundColor: "#0023a6",
+      currentFormView: "Input",
+      buttonOpacity: "0.3",
       buttonCursor: "arrow",
     };
   }
@@ -44,7 +45,7 @@ class LandingPageContainer extends Component {
     e.preventDefault();
     const form = window.document.getElementsByClassName("contactForm");
 
-    if(this.state.buttonBackgroundColor === "#0F42FF") {
+    if(this.state.buttonOpacity === "1") {
       emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form[0], process.env.REACT_APP_USER_ID)
       .then((result) => {
           console.log(result.text);
@@ -103,7 +104,7 @@ class LandingPageContainer extends Component {
     //Update the submit button state based on 
     const isButtonSet = (this.state.firstname !== "" && this.state.lastname !== "" && this.state.email !== "" && this.state.message !== "")
     this.setState({
-      buttonBackgroundColor: isButtonSet === true ? "#0F42FF" : "#0023a6",
+      buttonOpacity: isButtonSet === true ? "1" : "0.3",
       buttonCursor: isButtonSet === true ? "pointer" : "arrow",
     });
   }
