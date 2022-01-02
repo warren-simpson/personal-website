@@ -330,6 +330,29 @@
     color: white;
 }
 
+.loader {
+    top: 50%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 5px solid rgba(220, 220, 220, 0.1);
+    border-top: 5px solid white;
+    -webkit-background-clip: padding-box; 
+    background-clip: padding-box;
+    animation: animate 0.7s infinite linear;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg); 
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg); 
+    }
+}
 
 
 @media only screen and (max-width: 947px) {

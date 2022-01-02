@@ -22,7 +22,7 @@ class LandingPageContainer extends Component {
       message: "",
       l4Color: "white",
       l4ErrorMessage: "",
-      currentFormView: "Input",
+      currentFormView: "input",
       buttonOpacity: "0.3",
       buttonCursor: "arrow",
     };
