@@ -3,7 +3,8 @@ import { Github, Linkedin } from "../icons";
 import "../views/styles/LandingPageView.css";
 
 const LandingPageView = (props) => {
-  const dynamicFormContent = <>
+  var dynamicFormContent = (
+  <>
             <div class="formCell1" onSubmit={(e) => props.handleSubmit(e)}>
               <label class="formLabel" >Firstname <span class="errorMessage">{props.state.l1ErrorMessage}</span></label>
               <input class="formInput"style={{"border-color": props.state.l1Color}} value={props.state.firstname} name="firstname" onChange={(e) => props.handleInputChange(e)} autoComplete="off"></input>
@@ -32,13 +33,16 @@ const LandingPageView = (props) => {
             <div class="formCell1">
               <button class="submitButton" style={{"opacity": props.state.buttonOpacity, "cursor": props.state.buttonCursor}} onClick={(e) => props.handleSubmit(e)} type="button">Submit</button>
             </div>
-      </>
+      </> )
 
   if(props.state.currentFormView === "thankyou") {
 
   }
   else if(props.state.currentFormView === "loading") {
-
+    dynamicFormContent = (
+    <>
+    <div class="loader"></div>
+    </>)
   }
 
   return (
