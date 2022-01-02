@@ -36,7 +36,12 @@ const LandingPageView = (props) => {
       </> )
 
   if(props.state.currentFormView === "thankyou") {
-
+    dynamicFormContent = (
+      <>
+      <div class="cftdiv">
+        <p class="thankYouText">Thank for contacting me, <br/> I will be connecting with you shortly.</p>
+      </div>
+      </>)
   }
   else if(props.state.currentFormView === "loading") {
     dynamicFormContent = (
@@ -62,7 +67,7 @@ const LandingPageView = (props) => {
 
         <div class="section1">
           <div class="sec1A">
-            <p class="P1A">Hi There!<br></br><span class="P1B">Looking For A Frontend Developer?</span></p>
+            <p class="P1A">Hi There!<br></br><span class="P1B">Looking For A Frontend Engineer?</span></p>
           </div>
 
           <div class="sec1B">
