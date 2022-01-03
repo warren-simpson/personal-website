@@ -3,6 +3,7 @@ import { Github, Linkedin } from "../icons";
 import "../views/styles/LandingPageView.css";
 
 const LandingPageView = (props) => {
+  console.log(window.innerWidth)
   var dynamicFormContent = (
   <>
             <div class="formCell1" onSubmit={(e) => props.handleSubmit(e)}>

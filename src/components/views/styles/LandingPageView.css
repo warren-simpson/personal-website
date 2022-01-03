@@ -165,7 +165,7 @@
 
 .caseContainer1 {
     background-color: #212121;
-    margin-top: 5%;
+    margin-top: 10%;
     width: 400px;
     height: 550px;
     margin-left: auto;
@@ -177,7 +177,7 @@
 
 .caseContainer2 {
     background-color: #212121;
-    margin-top: 5%;
+    margin-top: 10%;
     width: 400px;
     height: 550px;
     margin-left: 10%;
@@ -371,7 +371,63 @@
     }
 }
 
+@media only screen and (max-width: 1332px) { 
+    .profile {
+        width: 350px;
+        height: 350px;
+        margin-left: 70px;
+    }
 
+    .P1A {
+        font-size: 75px;
+    }
+    
+    .P1B {
+        font-size: 55px;
+    }
+}
+
+@media only screen and (max-width: 1204px) { 
+    .P1A {
+        margin-left: 70px;
+    }
+}
+
+@media only screen and (max-width: 1157px) { 
+    .profile {
+        width: 300px;
+        height: 300px;
+        margin-left: 120px;
+    }
+
+    .P1A {
+        font-size: 65px;
+    }
+    
+    .P1B {
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-width: 1120px) { 
+    .profile {
+        width: 300px;
+        height: 300px;
+        margin-left: 60px;
+    }
+}
+
+@media only screen and (max-width: 976px) { 
+    .P1A {
+        margin-left: 60px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+
+}
+
+/*
 @media only screen and (max-width: 947px) {
     .textHolder {
         margin-top: 25%;
@@ -527,3 +583,4 @@
         font-size: 16px;
     }
 }
+*/
