@@ -43,12 +43,17 @@ class LandingPageContainer extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
+    this.setState({
+      currentFormView: "loading"
+    })
     const form = window.document.getElementsByClassName("contactForm");
 
     if(this.state.buttonOpacity === "1") {
       emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form[0], process.env.REACT_APP_USER_ID)
       .then((result) => {
-          console.log(result.text);
+        this.setState({
+          currentFormView: "thankyou"
+        })
       }, (error) => {
           console.log(error.text);
       });
