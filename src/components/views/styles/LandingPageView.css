@@ -424,7 +424,32 @@
 }
 
 @media only screen and (max-width: 950px) {
+    .logoContainer {
+        margin-left: 20px;
+    }
 
+    .landingNavBar ul {
+        margin-right: 0px;
+    }
+
+    .gitHolder1 {
+        margin-left: 80px;
+    }
+
+    .P1A {
+        font-size: 55px;
+    }
+    
+    .P1B {
+        font-size: 35px;
+    }
+
+    .profile {
+        width: 200px;
+        height: 200px;
+        margin-left: 90px;
+        margin-top: 100px;
+    }
 }
 
 /*
