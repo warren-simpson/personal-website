@@ -30,7 +30,7 @@
 
 .landingNavBar ul li {
     display: inline-block;
-    padding: 0px 20px
+    padding: 0px 20px;
 }
 
 .logoContainer {
@@ -173,6 +173,7 @@
     cursor: pointer;
     display: grid;
     grid-template-rows: 39% 10% 42% 9%;
+    visibility: hidden;
 }
 
 .caseContainer2 {
@@ -184,6 +185,7 @@
     cursor: pointer;
     display: grid;
     grid-template-rows: 39% 10% 42% 9%;
+    visibility: hidden;
 }
 
 .caseImage {
@@ -452,6 +454,10 @@
     }
 }
 
+
+@media only screen and (max-width: 810px) {
+    
+}
 /*
 @media only screen and (max-width: 947px) {
     .textHolder {

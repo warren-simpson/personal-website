@@ -2,6 +2,30 @@ import React from "react";
 import { Github, Linkedin } from "../icons";
 import "../views/styles/LandingPageView.css";
 
+            /*
+            <div class="caseContainer1" onMouseEnter={(e) => props.handleCaseOverEnter(e, "1")} onMouseLeave={(e) => props.handleCaseOverLeave(e, "1")} onClick={(e) => props.handleNewWindowClick(e, "https://malus.fi")}>
+              <img class="caseImage" src="malusfrontpage.svg" alt="" style={{"opacity": props.state.case1Opacity}}></img>
+              <p class="caseTitle">Malus</p>
+              <p class="caseText">
+                A web application that was created to interact with smart contracts on the
+                Ethereum blockchain.</p>
+              <i class="caseGitHolder" onClick={(e) => props.handleNewWindowClick(e, "https://github.com/malus-labs")}>
+                <Github className="githubIcon2" fill="white"/> 
+              </i>
+            </div>
+
+            <div class="caseContainer2" onMouseEnter={(e) => props.handleCaseOverEnter(e, "2")} onMouseLeave={(e) => props.handleCaseOverLeave(e, "2")} onClick={(e) => props.handleNewWindowClick(e, "https://lemonade-ecomm.herokuapp.com/php/FrontPage.php")}>
+              <img class="caseImage" src="lemonadefrontpage.svg" alt="" style={{"opacity": props.state.case2Opacity}}></img>
+              <p class="caseTitle">Lemonade</p>
+              <p class="caseText">
+                An ecommerce web application created to help customers purchase items such as bags and shoes
+                in multiple quanties.</p>
+              <i class="caseGitHolder" onClick={(e) => props.handleNewWindowClick(e, "https://github.com/Warren28/Php_Project")}>
+                <Github className="githubIcon2" fill="white"/> 
+              </i>
+            </div>
+            */
+
 const LandingPageView = (props) => {
   console.log(window.innerWidth)
   var dynamicFormContent = (
@@ -114,28 +138,7 @@ const LandingPageView = (props) => {
           </div>
 
           <div class="sec3A">
-            <div class="caseContainer1" onMouseEnter={(e) => props.handleCaseOverEnter(e, "1")} onMouseLeave={(e) => props.handleCaseOverLeave(e, "1")} onClick={(e) => props.handleNewWindowClick(e, "https://malus.fi")}>
-              <img class="caseImage" src="malusfrontpage.svg" alt="" style={{"opacity": props.state.case1Opacity}}></img>
-              <p class="caseTitle">Malus</p>
-              <p class="caseText">
-                A web application that was created to interact with smart contracts on the
-                Ethereum blockchain.</p>
-              <i class="caseGitHolder" onClick={(e) => props.handleNewWindowClick(e, "https://github.com/malus-labs")}>
-                <Github className="githubIcon2" fill="white"/> 
-              </i>
-            </div>
-
-            <div class="caseContainer2" onMouseEnter={(e) => props.handleCaseOverEnter(e, "2")} onMouseLeave={(e) => props.handleCaseOverLeave(e, "2")} onClick={(e) => props.handleNewWindowClick(e, "https://lemonade-ecomm.herokuapp.com/php/FrontPage.php")}>
-              <img class="caseImage" src="lemonadefrontpage.svg" alt="" style={{"opacity": props.state.case2Opacity}}></img>
-              <p class="caseTitle">Lemonade</p>
-              <p class="caseText">
-                An ecommerce web application created to help customers purchase items such as bags and shoes
-                in multiple quanties.</p>
-              <i class="caseGitHolder" onClick={(e) => props.handleNewWindowClick(e, "https://github.com/Warren28/Php_Project")}>
-                <Github className="githubIcon2" fill="white"/> 
-              </i>
-            </div>
-
+            
           </div>
         </div>
 
