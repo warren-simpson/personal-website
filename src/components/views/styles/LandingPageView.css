@@ -440,6 +440,7 @@
 
     .P1A {
         font-size: 55px;
+        margin-left: 45px; 
     }
     
     .P1B {
@@ -455,15 +456,26 @@
 }
 
 
-@media only screen and (max-width: 831px) {
-    .P1A {
-        margin-left: 50px; 
-    }
-}
-
-@media only screen and (max-width: 804px) {
-
+@media only screen and (max-width: 800px) {
     
+    .P1A {
+        font-size: 35px;
+        margin-top: 125px;
+       
+    }
+
+    .P1B {
+        font-size: 29px;
+    }
+
+    .profile {
+        width: 130px;
+        height: 130px;
+        margin-left: 140px;
+        margin-top: 115px;
+    }
+
+
 }
 
 /*
