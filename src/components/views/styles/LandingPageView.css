@@ -557,7 +557,7 @@
 
 
 
-    
+
     
     /**/
     .loader {
@@ -584,7 +584,7 @@
     }
     
     .thankYouText {
-        margin-top: 320px;
+        margin-top: 200px;
         color: white;
         font-family: Arial, sans-serif;
         font-weight: lighter;
@@ -593,9 +593,13 @@
 }
 
 @media only screen and (max-width: 623px) {
+    .profileTitle {
+        margin-left: 10px;
+        font-size: 17px;
+    }
+
     .P1A {
         font-size: 25px;
-       
     }
 
     .P1B {
