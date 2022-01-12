@@ -27,11 +27,6 @@ import "../views/styles/LandingPageView.css";
             */
             
             /*
-            <p class="aboutText">
-            Computer Science graduate who is extremely passionate about frontend development. 
-            I enjoy working with others who are able to communicate their required objectives clearly.
-            I live by the moto of "simplicity is the ultimate sophistication" because I believe quality over quantity.
-            </p>
             */
            
 const LandingPageView = (props) => {
@@ -121,7 +116,11 @@ const LandingPageView = (props) => {
             </ul>
           </div>
 
-          
+          <p class="aboutText">
+            Computer Science graduate who is extremely passionate about frontend development. 
+            I enjoy working with others who are able to communicate their required objectives clearly.
+            I live by the moto of "simplicity is the ultimate sophistication" because I believe quality over quantity.
+          </p>
 
           <div class="landingNavBar">
             <div></div>
