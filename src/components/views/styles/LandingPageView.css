@@ -595,6 +595,28 @@
 }
 
 @media only screen and (max-width: 623px) {
+
+    .githubIcon1 {
+        margin-top: -5px;
+        width: 30px; 
+        height: 30px;
+    }
+
+    .linkedinIcon {
+        margin-top: -5px;
+        width: 30px; 
+        height: 30px;
+    }
+
+    .aboutTitle {
+        font-size: 30px;
+    }
+
+    .aboutText {
+        font-size: 18px;
+        width: 450px;
+    }
+
     .profileTitle {
         margin-left: 10px;
         font-size: 17px;
