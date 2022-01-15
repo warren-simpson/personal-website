@@ -87,7 +87,7 @@ const LandingPageView = (props) => {
             </div>
             <div></div>
             <ul>
-                <li class="gitHolder1" onClick={(e) => props.handleNewWindowClick(e, "https://github.com/Warren28")}>
+                <li class="gitContainer1" onClick={(e) => props.handleNewWindowClick(e, "https://github.com/Warren28")}>
                   <Github className="githubIcon1" fill="white"/> 
                 </li>
             </ul>
@@ -110,7 +110,7 @@ const LandingPageView = (props) => {
             </div>
             <div></div>
             <ul>
-                <li className="linkedinHolder" onClick={(e) => props.handleNewWindowClick(e, "https://www.linkedin.com/in/warren-simpson1/")}>
+                <li className="linkedinContainer" onClick={(e) => props.handleNewWindowClick(e, "https://www.linkedin.com/in/warren-simpson1/")}>
                   <Linkedin className="linkedinIcon" fill="white"/> 
                 </li>
             </ul>
