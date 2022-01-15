@@ -237,7 +237,8 @@
 .contactForm {
     border-radius: 15px;
     border: white solid 1px;
-    margin-top: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
     width: 750px;
@@ -439,7 +440,7 @@
         margin-right: 0px;
     }
 
-    .gitHolder1 {
+    .gitContainer1 {
         margin-left: 80px;
     }
 
@@ -464,7 +465,7 @@
         width: 700px;
     }
 
-    .linkedinHolder {
+    .linkedinContainer {
         margin-left: 80px;
     }
 
@@ -595,7 +596,6 @@
 }
 
 @media only screen and (max-width: 623px) {
-
     .githubIcon1 {
         margin-top: -5px;
         width: 30px; 
@@ -633,5 +633,48 @@
     .profile {
         width: 100px;
         height: 100px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .profile {
+        margin-left: 90px;
+    }
+
+    .aboutText {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .profile {
+        margin-left: 70px;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    .logoContainer {
+        margin-left: 7px;
+    }
+
+    .gitContainer1 {
+        margin-left: 100px;
+    }
+
+    .linkedinContainer {
+        margin-left: 100px;
+    }
+
+    .aboutTitle {
+        font-size: 25px;
+    }
+
+    .aboutText {
+        font-size: 17px;
+        width: 300px;
+    }
+
+    .resumeButton {
+        margin-right: 15px;
     }
 }
