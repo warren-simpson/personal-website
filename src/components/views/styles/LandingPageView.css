@@ -670,6 +670,11 @@
     .resumeButton {
         margin-right: 15px;
     }
+
+    .contactForm {
+        width: 300px;
+        height: 450px;
+    }
 }
 
 @media only screen and (max-width: 449px) {
