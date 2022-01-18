@@ -175,7 +175,6 @@
 
 .caseContainer1 {
     background-color: #212121;
-    margin-top: 10%;
     width: 400px;
     height: 550px;
     margin-left: auto;
@@ -183,19 +182,18 @@
     cursor: pointer;
     display: grid;
     grid-template-rows: 39% 10% 42% 9%;
-    visibility: hidden;
+    align-self: center;
 }
 
 .caseContainer2 {
     background-color: #212121;
-    margin-top: 10%;
     width: 400px;
     height: 550px;
     margin-left: 10%;
     cursor: pointer;
     display: grid;
     grid-template-rows: 39% 10% 42% 9%;
-    visibility: hidden;
+    align-self: center;
 }
 
 .caseImage {
