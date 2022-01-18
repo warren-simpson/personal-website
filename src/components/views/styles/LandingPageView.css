@@ -242,13 +242,12 @@
 .contactForm {
     border-radius: 15px;
     border: white solid 1px;
-    margin-top: auto;
-    margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
     width: 750px;
     height: 750px;
     overflow: hidden;
+    align-self: center;
 }
 
 .formCell1 {
@@ -654,6 +653,10 @@
         margin-left: 110px;
     }
 
+    .P1A {
+        margin-left: 32px; 
+    }
+
     .linkedinContainer {
         margin-left: 110px;
     }
@@ -698,5 +701,12 @@
     .profile {
         width: 170px;
         height: 170px;
+    }
+}
+
+
+@media only screen and (max-width: 382px) {
+    .profile {
+        margin-left: 45%;
     }
 }
