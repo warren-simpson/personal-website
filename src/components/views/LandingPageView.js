@@ -1,6 +1,7 @@
 import React from "react";
 import { Github, Linkedin } from "../icons";
 import "../views/styles/LandingPageView.css";
+//import Carousel from 'react-elastic-carousel';
       
 const LandingPageView = (props) => {
   var dynamicFormContent = (

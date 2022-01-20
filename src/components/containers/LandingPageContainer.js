@@ -25,6 +25,22 @@ class LandingPageContainer extends Component {
       currentFormView: "input",
       buttonOpacity: "0.3",
       buttonCursor: "arrow",
+      cases: [
+        {
+          caseText: "A web application that was created to interact with smart contracts on the Ethereum blockchain.",
+          githubLink: "https://github.com/malus-labs",
+          img: "malusfrontpage.svg",
+          name: "Malus",
+          website: "https://malus.fi",
+        }, 
+
+        {
+          caseText: "An ecommerce web application created to help customers purchase items such as bags and shoes in multiple quanties.",
+          githubLink: "https://github.com/Warren28/Php_Project",
+          img: "lemonadefrontpage.svg",
+          name: "Lemonade",
+          website: "https://lemonade-ecomm.herokuapp.com/php/FrontPage.php",
+        }]
     };
   }
 
