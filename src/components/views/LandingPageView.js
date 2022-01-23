@@ -1,7 +1,9 @@
 import React from "react";
 import { Github, Linkedin } from "../icons";
 import "../views/styles/LandingPageView.css";
-import Carousel from 'react-elastic-carousel';
+//import Carousel from 'react-elastic-carousel';
+import Carousel from 'react-bootstrap/Carousel';
+import 'bootstrap/dist/css/bootstrap.css';
 
             /*
             <div class="caseContainer1" onMouseEnter={(e) => props.handleCaseOverEnter(e, "1")} onMouseLeave={(e) => props.handleCaseOverLeave(e, "1")} onClick={(e) => props.handleNewWindowClick(e, "https://malus.fi")}>
@@ -137,30 +139,38 @@ const LandingPageView = (props) => {
             <div></div>
           </div>
 
-          <Carousel class="carousel">
-            <div class="caseContainer1" onMouseEnter={(e) => props.handleCaseOverEnter(e, "1")} onMouseLeave={(e) => props.handleCaseOverLeave(e, "1")} onClick={(e) => props.handleNewWindowClick(e, "https://malus.fi")}>
-              <img class="caseImage" src="malusfrontpage.svg" alt="" style={{"opacity": props.state.case1Opacity}}></img>
-              <p class="caseTitle">Malus</p>
-              <p class="caseText">
-                A web application that was created to interact with smart contracts on the
-                Ethereum blockchain.</p>
-                
+          <Carousel className="carousel">
+            <Carousel.Item>
+              <div class="caseContainer1" onMouseEnter={(e) => props.handleCaseOverEnter(e, "1")} onMouseLeave={(e) => props.handleCaseOverLeave(e, "1")} onClick={(e) => props.handleNewWindowClick(e, "https://malus.fi")}>
+                <img class="caseImage" src="malusfrontpage.svg" alt="" style={{"opacity": props.state.case1Opacity}}></img>
+                <p class="caseTitle">Malus</p>
+                <p class="caseText">
+                  A web application that was created to interact with smart contracts on the
+                  Ethereum blockchain.
+                </p>
+                  
                 <i class="caseGitHolder" onClick={(e) => props.handleNewWindowClick(e, "https://github.com/malus-labs")}>
                   <Github className="githubIcon2" fill="white"/> 
                 </i>
-            </div>
+              </div>
+            </Carousel.Item>
 
-                <div class="caseContainer1" onMouseEnter={(e) => props.handleCaseOverEnter(e, "1")} onMouseLeave={(e) => props.handleCaseOverLeave(e, "1")} onClick={(e) => props.handleNewWindowClick(e, "https://malus.fi")}>
-                  <img class="caseImage" src="malusfrontpage.svg" alt="" style={{"opacity": props.state.case1Opacity}}></img>
-                  <p class="caseTitle">Malus</p>
-                  <p class="caseText">
-                     A web application that was created to interact with smart contracts on the
-                     Ethereum blockchain.</p>
-                  <i class="caseGitHolder" onClick={(e) => props.handleNewWindowClick(e, "https://github.com/malus-labs")}>
-                    <Github className="githubIcon2" fill="white"/> 
-                  </i>
-                </div>
-            </Carousel>
+            <Carousel.Item>
+              <div class="caseContainer1" onMouseEnter={(e) => props.handleCaseOverEnter(e, "1")} onMouseLeave={(e) => props.handleCaseOverLeave(e, "1")} onClick={(e) => props.handleNewWindowClick(e, "https://malus.fi")}>
+                <img class="caseImage" src="malusfrontpage.svg" alt="" style={{"opacity": props.state.case1Opacity}}></img>
+                <p class="caseTitle">Malus</p>
+                <p class="caseText">
+                  A web application that was created to interact with smart contracts on the
+                  Ethereum blockchain.
+                </p>
+                  
+                <i class="caseGitHolder" onClick={(e) => props.handleNewWindowClick(e, "https://github.com/malus-labs")}>
+                  <Github className="githubIcon2" fill="white"/> 
+                </i>
+              </div>
+            </Carousel.Item>
+
+          </Carousel>
         </div>
 
         <div class="section4">
