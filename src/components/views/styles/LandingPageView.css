@@ -193,17 +193,6 @@
     align-self: center;
 }
 
-.caseContainer2 {
-    background-color: #212121;
-    width: 400px;
-    height: 550px;
-    margin-left: 10%;
-    cursor: pointer;
-    display: grid;
-    grid-template-rows: 39% 10% 42% 9%;
-    align-self: center;
-}
-
 .caseImage {
     width: 100%;
 }
