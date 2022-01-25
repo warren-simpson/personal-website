@@ -1,8 +1,9 @@
 import React from "react";
 import { Github, Linkedin } from "../icons";
+import 'bootstrap/dist/css/bootstrap.css';
 import "../views/styles/LandingPageView.css";
 import Carousel from 'react-bootstrap/Carousel';
-import 'bootstrap/dist/css/bootstrap.css';
+
 
 const LandingPageView = (props) => {
   var dynamicFormContent = (
@@ -128,6 +129,7 @@ const LandingPageView = (props) => {
             </Carousel.Item>
             ))}
           </Carousel>
+
         </div>
 
         <div class="section4">
