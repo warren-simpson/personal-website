@@ -118,7 +118,7 @@ const LandingPageView = (props) => {
           <Carousel className="carousel">
             {props.state.cases.map((currCase) => (
             <Carousel.Item>
-              <div class="caseContainer1" onMouseEnter={(e) => props.handleCaseOverEnter(e, currCase.number)} onMouseLeave={(e) => props.handleCaseOverLeave(e, currCase.number)} onClick={(e) => props.handleNewWindowClick(e, currCase.website)}>
+              <div class="caseContainer" onMouseEnter={(e) => props.handleCaseOverEnter(e, currCase.number)} onMouseLeave={(e) => props.handleCaseOverLeave(e, currCase.number)} onClick={(e) => props.handleNewWindowClick(e, currCase.website)}>
                 <img class="caseImage" src={currCase.img} alt="" style={{"opacity": props.state.case1Opacity}}></img>
                 <p class="caseTitle">{currCase.name}</p>
                 <p class="caseText">{currCase.text}</p>

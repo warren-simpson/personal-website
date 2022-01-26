@@ -54,6 +54,7 @@ p{
 }
 
 .gitContainer1 {
+    margin-top: -25px;
     margin-left: 60px;
 }
 
@@ -142,6 +143,7 @@ p{
 }
 
 .linkedinContainer {
+    margin-top: -25px;
     margin-left: 60px;
 }
 
@@ -190,19 +192,19 @@ p{
     height: 100%;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    align-items: center;
 }
 
-.caseContainer1 {
+.caseContainer {
     background-color: #212121;
     width: 400px;
     height: 550px;
-    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
     display: grid;
     grid-template-rows: 39% 10% 42% 9%;
-    align-self: center;
 }
 
 .caseImage {
@@ -447,7 +449,7 @@ p{
     }
 
     .gitContainer1 {
-        margin-left: 80px;
+        margin-left: 60px;
     }
 
     .P1A {
@@ -471,7 +473,7 @@ p{
     }
 
     .linkedinContainer {
-        margin-left: 80px;
+        margin-left: 60px;
     }
 
     .resumeButton {
@@ -631,6 +633,34 @@ p{
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .caseContainer {
+        width: 300px;
+        height: 413px;
+    }
+    
+    .caseTitle {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    
+    .caseText {
+        font-size: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 60px;
+    }
+    
+    .caseGitHolder {
+        margin-right: 15px;
+    }
+    
+    .githubIcon2 {
+        width: 20px; 
+        height: 20px;
+    }
+}
+
 @media only screen and (max-width: 560px) {
     .profile {
         width: 230px;
@@ -643,6 +673,7 @@ p{
     }
 }
 
+
 @media only screen and (max-width: 502px) {
     .profile {
         width: 210px;
@@ -652,12 +683,16 @@ p{
 }
 
 @media only screen and (max-width: 481px) {
+    .landingNavBar ul {
+        margin-right: 15px;
+    }
+
     .logoContainer {
         margin-left: 7px;
     }
 
     .gitContainer1 {
-        margin-left: 110px;
+        margin-left: 85px;
     }
 
     .P1A {
@@ -665,7 +700,7 @@ p{
     }
 
     .linkedinContainer {
-        margin-left: 110px;
+        margin-left: 85px;
     }
 
     .aboutTitle {
