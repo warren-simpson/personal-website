@@ -6,8 +6,9 @@ import Carousel from 'react-bootstrap/Carousel';
 
 
 const LandingPageView = (props) => {
+  console.log(window.screen.height);
   var dynamicFormContent = (
-  <>
+      <>
             <div class="formCell1" onSubmit={(e) => props.handleSubmit(e)}>
               <label class="formLabel" >Firstname <span class="errorMessage">{props.state.l1ErrorMessage}</span></label>
               <input class="formInput"style={{"border-color": props.state.l1Color}} value={props.state.firstname} name="firstname" onChange={(e) => props.handleInputChange(e)} autoComplete="off"></input>
