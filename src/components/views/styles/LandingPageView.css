@@ -110,7 +110,7 @@ p{
     width: 400px;
     height: 400px;
     margin-top: 18%;
-    margin-left: 40px;
+    margin-left: 90px;
 }
 
 .section2 {
@@ -198,8 +198,8 @@ p{
 
 .caseContainer {
     background-color: #212121;
-    width: 400px;
-    height: 550px;
+    width: 500px;
+    height: 687.5px;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
@@ -215,7 +215,7 @@ p{
     color: white;
     font-family: Arial, sans-serif;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 26px;
     margin-left: 20px;
 }
 
@@ -223,7 +223,7 @@ p{
     color: white;
     font-family: Arial, sans-serif;
     font-weight: lighter;
-    font-size: 17px;
+    font-size: 19px;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 60px;
@@ -497,6 +497,19 @@ p{
         width: 650px;
     }
 
+    .caseContainer {
+        width: 400px;
+        height: 550px;
+    }
+
+    .caseTitle {
+        font-size: 24px;
+    }
+
+    .caseText {
+        font-size: 17px;
+    }
+
     .contactForm {
         margin-top: 30px;
         margin-left: auto;
@@ -760,3 +773,5 @@ p{
         margin-left: 45%;
     }
 }
+
+
