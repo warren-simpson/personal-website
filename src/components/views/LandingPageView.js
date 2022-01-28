@@ -130,7 +130,6 @@ const LandingPageView = (props) => {
             </Carousel.Item>
             ))}
           </Carousel>
-
         </div>
 
         <div class="section4">
