@@ -3,7 +3,7 @@
 This repo is for my custom build [website](https://warrensimpson.io) using React.js. It showcases a few of my works I'm extremly proud,  a breif description about myself, and a form for individuals to contact me.
 
 ## Front Page
-![](public/Website.png)    
+![](public/Website.PNG)    
 
 
 ### `npm start`
