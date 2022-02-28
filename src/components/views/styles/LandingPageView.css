@@ -165,6 +165,7 @@ p{
     font-size: 18px;
     margin-right: 20px;
     cursor: pointer;
+    text-align: center;
 }
 
 .resumeButton:hover {
@@ -541,6 +542,10 @@ p{
 
 
 @media only screen and (max-width: 650px) {
+    .resumeButton {
+        font-size: 16px;
+    }
+
     .contactForm {
         width: 400px;
         height: 450px;
@@ -565,11 +570,13 @@ p{
         margin-top: 5px;
         padding-left: 10px;
         padding-right: 10px;
+        font-size: 12px;
     }
     
     .formCell2 {
         height: 150px;
         margin-top: 15px;
+        font-size: 12px;
     }
     
     .submitButton {
