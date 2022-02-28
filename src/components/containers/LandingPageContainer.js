@@ -54,6 +54,7 @@ class LandingPageContainer extends Component {
 
 
   handleNewWindowClick = (e, link) => {
+    e.stopPropagation();
     window.open(link, "_blank");
   }
 

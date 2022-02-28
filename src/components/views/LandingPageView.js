@@ -6,7 +6,6 @@ import Carousel from 'react-bootstrap/Carousel';
 
 
 const LandingPageView = (props) => {
-  console.log(window.screen.height);
   var dynamicFormContent = (
       <>
             <div class="formCell1" onSubmit={(e) => props.handleSubmit(e)}>
@@ -123,7 +122,7 @@ const LandingPageView = (props) => {
                 <img class="caseImage" src={currCase.img} alt="" style={{"opacity": props.state.case1Opacity}}></img>
                 <p class="caseTitle">{currCase.name}</p>
                 <p class="caseText">{currCase.text}</p>
-                <i class="caseGitHolder" onClick={(e) => props.handleNewWindowClick(e, currCase.github)}>
+                <i class="caseGitHolder" onClick={(e) => props.handleNewWindowClick(e, currCase.githubLink)}>
                   <Github className="githubIcon2" fill="white"/> 
                 </i>
               </div>
