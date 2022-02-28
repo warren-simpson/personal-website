@@ -36,7 +36,7 @@ class LandingPageContainer extends Component {
         }, 
 
         {
-          githubLink: "https://github.com/Warren28/Php_Project",
+          githubLink: "https://github.com/warren-simpson/Php_Project",
           img: "lemonadefrontpage.svg",
           name: "Lemonade",
           number: "2",
